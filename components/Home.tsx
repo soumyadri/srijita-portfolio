@@ -23,11 +23,11 @@ export default function Home({ data }: any) {
     return (
         <LightModeContext.Provider value={{ isDarkMode, setDarkMode, colors }}>
             <div className={`w-full bg-[${colors.background}]`}>
-                <div className={`font-raleway antialiased text-[${colors.text}] bg-[${colors.background}] w-[85%] mx-auto pb-4`}>
+                <div className={`font-raleway antialiased text-[${colors.text}] bg-[${colors.background}] w-[95%] lg:w-[85%] mx-auto pb-4`}>
                     <Header personalInfo={personalInfo} />
-                    <div className="min-h-screen flex flex-row w-full justify-between">
+                    <div className="min-h-screen flex flex-col lg:flex-row w-full justify-between">
                         <ProfileData personalInfo={personalInfo} />
-                        <div className='flex flex-col w-[68%]'>
+                        <div className='flex flex-col lg:w-[68%] w-full'>
                             <Navbar sections={sections} activeTab={activeTab} setActiveTab={setActiveTab} />
                             {activeTab === 'home' && <AboutSection aboutMe={aboutMe} whatIDo={whatIDo} />}
                             {activeTab === 'resume' && <ResumeSection resumeSection={resumeSection} whatIDo={whatIDo} skills={skills}  />}

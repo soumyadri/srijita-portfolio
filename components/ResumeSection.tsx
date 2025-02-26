@@ -5,13 +5,13 @@ export default function ResumeSection({ resumeSection, skills }: any) {
   const { isDarkMode } = useLightMode();
 
   return (
-    <div className={`w-full p-8 ${isDarkMode ? 'bg-[#000]' : 'bg-[#ffffff]'} rounded-lg shadow-md mt-2 h-[700px]`}>
+    <div className={`w-full p-8 ${isDarkMode ? 'bg-[#000]' : 'bg-[#ffffff]'} rounded-lg shadow-md mt-2 lg:h-[700px] h-full`}>
       <div className="flex">
         <h2 className="font-poppins text-2xl font-semibold mb-6">RESUME</h2>
         <ColorBar />
       </div>
 
-      <div className="flex gap-4 max-h-[420px] overflow-y-auto">
+      <div className="flex flex-col lg:flex-row gap-4 max-h-fit lg:max-h-[420px] overflow-y-auto">
         {Object.keys(resumeSection).map((key: any, index: number) => (
           <div key={index} className="mb-4 flex-1">
             <h3 className="font-poppins text-xl font-semibold mb-2 capitalize">{key}</h3>

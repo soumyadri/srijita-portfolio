@@ -14,7 +14,7 @@ export default function WorkSection({ aboutMe, whatIDo }: any) {
 
       <h2 className="font-poppins text-2xl font-semibold my-4">What I do!</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {whatIDo.map((item: any, index: number) => (
           <div key={item.id} className={`${isDarkMode ? index % 3 === 0 ? 'bg-[#0e2f39]' : 'bg-[#3b4314]' : index % 3 === 0 ? 'bg-[#d8f8ff]' : 'bg-[#fbffe7]'} p-4 rounded shadow-md my-4 mx-2`}>
             <h3 className="font-poppins text-xl font-semibold mb-2">{item.title}</h3>
