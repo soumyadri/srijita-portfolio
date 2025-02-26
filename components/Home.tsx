@@ -8,9 +8,6 @@ import '../app/globals.css';
 import { LightModeContext } from '@/Utils/ThemeContextProvider';
 import { ColorTheme } from '@/Utils/ColorTheme';
 import ResumeSection from './ResumeSection';
-import WorkSection from './WorkSection';
-import ProjectSection from './ProjectSection';
-import ContactSection from './ContactSection';
 
 export default function Home({ data }: any) {
     const [ isDarkMode, setDarkMode ] = useState(false);

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://srijita-chakraborty.vercel.app/
+
+# Sitemaps
+Sitemap: https://srijita-chakraborty.vercel.app/sitemap.xml

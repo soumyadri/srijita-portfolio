@@ -5,7 +5,6 @@ import { useLightMode } from "@/Utils/ThemeContextProvider";
 export default function ProfileData(props: any) {
     const { isDarkMode, colors } = useLightMode();
     const { personalInfo } = props;
-    console.log('cp', colors);
     return (
         <div className="rounded w-[30%] left-0">
             <div className={`w-full p-8 pb-0 items-center ${isDarkMode ? 'bg-[#000]' : 'bg-[#ffffff]'} rounded-lg shadow-md mt-40 mr-5 text-center h-[700px]`}>
